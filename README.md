@@ -1,3 +1,6 @@
+![image](https://github.com/KayDrechsler/nextjs-event-planner/assets/4559673/aefc3f6c-f7eb-4dd9-b1cb-003393449d82)
+
+
 # Next.js - Event Planner
 A Next.js case study application where I experimented with NextJS' page router instead of the app router. Even though the apps router is the recommended one by NextJS' dev team, it is worth knowing about the page router as well. The application shows and filters featured Events.
 
