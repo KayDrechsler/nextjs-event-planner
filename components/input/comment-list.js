@@ -1,21 +1,17 @@
 import styles from './comment-list.module.scss';
 
-function CommentList() {
+function CommentList({ items }) {
     return (
         <ul className={styles.comments}>
             {/* Render list of comments - fetched from API */}
-            <li className={styles['list-item']}>
-                <p className={styles['paragraph']}>My comment is amazing!</p>
-                <div className={styles['author']}>
-                    By <address className={styles['address']}>Kay</address>
-                </div>
-            </li>
-            <li className={styles['list-item']}>
-                <p className={styles['paragraph']}>My comment is amazing!</p>
-                <div className={styles['author']}>
-                    By <address className={styles['address']}>Kay</address>
-                </div>
-            </li>
+            {items.map(comment => (
+                <li key={comment._id} className={styles['list-item']}>
+                    <p className={styles['paragraph']}>{comment.text}</p>
+                    <div className={styles['author']}>
+                        By <address className={styles['address']}>{comment.name}</address>
+                    </div>
+                </li>
+            ))}
         </ul>
     );
 }

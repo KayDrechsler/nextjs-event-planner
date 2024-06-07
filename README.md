@@ -59,3 +59,4 @@ Execute `npm run dev` within the root directory and open up `http://localhost:30
 - [ ] Delete inline styles that were just assigned for demo purposes.
 - [ ] Remove CSS element selectors and replace them with classes. Again: just a demo CSS project, which focusses on NextJS instead of CSS/SCSS features.
 - [ ] Integrate authentication to secure Firebase data base. Here we're just using it as a demo case. No important data to be secured actually. But in a real world scenario this couldn't stay as it currently is.
+- [ ] Whitelist the server once the application would be deployed to grant access to MongoDB. Currently this is just working locally on my personal machine since I whitelisted it already.
